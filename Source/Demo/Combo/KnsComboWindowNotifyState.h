@@ -1,0 +1,24 @@
+#pragma once
+
+#include "CoreMinimal.h"
+#include "Animation/AnimNotifies/AnimNotifyState.h"
+#include "KnsComboWindowNotifyState.generated.h"
+
+/**
+ * Kns Combo Window（连段窗口）
+ * 所属系统：KNS（MH 遗留）
+ * 驱动组件：UKnsComboComponent
+ * 用途：窗口内允许输入接下一段连段
+ * 放置：连段招式段
+ * 参数：无
+ */
+UCLASS(meta = (DisplayName = "Kns Combo Window"))
+class DEMO_API UKnsComboWindowNotifyState : public UAnimNotifyState
+{
+	GENERATED_BODY()
+
+public:
+	virtual void NotifyBegin(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* Animation, float TotalDuration, const FAnimNotifyEventReference& EventReference) override;
+	virtual void NotifyEnd(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* Animation, const FAnimNotifyEventReference& EventReference) override;
+	virtual FString GetNotifyName_Implementation() const override;
+};

@@ -1,0 +1,53 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "5.8",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Demo",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "StateTree",
+			"Enabled": true
+		},
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
+		{
+			"Name": "GameplayAbilities",
+			"Enabled": true
+		},
+		{
+			"Name": "GameplayStateTree",
+			"Enabled": true
+		},
+		{
+			"Name": "GameplayCameras",
+			"Enabled": true
+		},
+		{
+			"Name": "Chooser",
+			"Enabled": true
+		},
+		{
+			"Name": "AnimationWarping",
+			"Enabled": true
+		},
+		{
+			"Name": "AnimationLocomotionLibrary",
+			"Enabled": true
+		}
+	]
+}
